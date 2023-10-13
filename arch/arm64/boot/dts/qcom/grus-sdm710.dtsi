@@ -831,23 +831,6 @@
 	reg = <0 0x97615000 0 0x2000>;
 };
 
-&firmware {
-	android {
-		compatible = "android,firmware";
-		vbmeta {
-			compatible = "android,vbmeta";
-			parts = "vbmeta,boot,system,vendor,dtbo,recovery";
-		};
-
-		fstab {
-			compatible = "android,fstab";
-			system {
-				status = "disabled";
-			};
-		};
-	};
-};
-
 &CPU0 {
 	clock-frequency = <1708800000>;
 };
